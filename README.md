@@ -42,3 +42,6 @@ now you can plug the cable connecting both keyboard's parts and use your keyboar
 
 # resources
 - for more info check [QMK tutorial](https://docs.qmk.fm/newbs)
+
+# keyboard
+![my sofle keyboard](./sofle_keyboard.jpg)
