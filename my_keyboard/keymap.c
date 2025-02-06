@@ -28,9 +28,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             case CUSTOM_PIPE:
                 if (get_mods() & MOD_MASK_SHIFT) {
                     unregister_mods(MOD_MASK_SHIFT);
-                    tap_code16(KC_PIPE);
-                    register_mods(MOD_MASK_SHIFT);
-                    //tap_code16(KC_GRV);
+                    register_mods(MOD_BIT(KC_RALT));
+                    tap_code(KC_1);
+                    unregister_mods(MOD_BIT(KC_RALT));
                 } else {
                     tap_code16(KC_ESC); // esq
                 }
