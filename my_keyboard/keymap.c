@@ -36,25 +36,25 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 }
                 return false;
 
-            case CUSTOM_GT:
-                if (get_mods() & MOD_MASK_SHIFT) {
-                    unregister_mods(MOD_MASK_SHIFT);
-                    tap_code16(KC_GT);
-                    register_mods(MOD_MASK_SHIFT);
-                } else {
-                    tap_code16(KC_LT);
-                }
-                return false;
+            //case CUSTOM_GT:
+            //    if (get_mods() & MOD_MASK_SHIFT) {
+            //        unregister_mods(MOD_MASK_SHIFT);
+            //        tap_code16(KC_GT);
+            //        register_mods(MOD_MASK_SHIFT);
+            //    } else {
+            //        tap_code16(KC_LT);
+            //    }
+            //    return false;
 
-            case CUSTOM_SCLN:
-                if (get_mods() & MOD_MASK_ALT) {
-                    unregister_mods(MOD_MASK_ALT);
-                    tap_code16(KC_TILD);
-                    register_mods(MOD_MASK_ALT);
-                } else {
-                    tap_code16(KC_SCLN);
-                }
-                return false;
+            //case CUSTOM_SCLN:
+            //    if (get_mods() & MOD_MASK_ALT) {
+            //        unregister_mods(MOD_MASK_ALT);
+            //        tap_code16(KC_TILD);
+            //        register_mods(MOD_MASK_ALT);
+            //    } else {
+            //        tap_code16(KC_SCLN);
+            //    }
+            //    return false;
 
             case CUSTOM_DASH:
                 if (get_mods() & MOD_MASK_SHIFT) {
