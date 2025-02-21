@@ -40,8 +40,25 @@
 
 #define ENCODER_RESOLUTION 4
 
+// #define MASTER_LEFT
+//#define MASTER_RIGHT
+
+#define SPLIT_POINTING_ENABLE
+#define POINTING_DEVICE_RIGHT
+
+#define CIRQUE_PINNACLE_CURVED_OVERLAY
+#define CIRQUE_PINNACLE_DIAMETER_MM 35
+//#define CIRQUE_PINNACLE_TAP_ENABLE
+#define POINTING_DEVICE_GESTURES_SCROLL_ENABLE
+#define POINTING_DEVICE_ROTATION_270
+#define CIRQUE_PINNACLE_ATTENUATION EXTREG__TRACK_ADCCONFIG__ADC_ATTENUATE_2X
+//define POINTING_DEVICE_SENSITIVITY 1  // Increase for higher speed (default is 1)
+//#define POINTING_DEVICE_SMOOTHING 3  // Lower means more raw input, higher means smoother
+//#define POINTING_DEVICE_DEBOUNCE 10  // Adjusts touch recognition delay, increase if ghost touches occur
+//#define CIRQUE_PINNACLE_TAP_THRESHOLD 20 // Lower makes tap more sensitive
+
+
 #define RGBLIGHT_SLEEP
-//
 #define RGBLIGHT_LAYERS
 
 /* ws2812 RGB LED */
